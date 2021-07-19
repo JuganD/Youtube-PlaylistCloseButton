@@ -6,7 +6,9 @@ Javascript script to append a close button next to the expand button of YouTube 
 Have you ever tried to copy a link to YouTube video, that is pointing at specific time in the video, but right after pasting it you realize you also pasted the query string to a an entire playlist as well? Or perhaps you just want to see that one specific video and you don't want to play an entire playlist. Well, this simple script may help with that. For long time, the only way I would remove the playlist was to remove the query parameter.. I'm still suprised that there is no button to remove the playlist, or at least not that I know of, and simply play the current video.
 
 To clarify what I mean, this is how the playlist panel looks like after the script is executed
-<img src="./result-screenshot.png" align="left">
+<p align="center">
+  <img src="./result-screenshot.png">
+</p>
 
 This script adds another button, right next to the Expand button (arrow down). This new button has the form of a cross and its whole purpose is to close the playlist by redirecting you to the current video (with the current timestamp), but without the playlist.
 
