@@ -25,8 +25,13 @@ function CreateButtonOnVideoPage() {
     }
 }
 
+// Attach the function to one of the YouTube events, because the website is SPA, which prevents the extension to execute on each page change
+// This event occurs when YouTube has finished the navigation to the new location
 window.addEventListener('yt-navigate-finish', function () {
     CreateButtonOnVideoPage();
 });
 
+// This function is executed only when the extension detects that the current page matches YouTube
+// In this case, the event 'yt-navigate-finish' won't be invoked! To go around that, we call the function anyway. 
+// It checks whether the page is the right one and executes.
 CreateButtonOnVideoPage();
