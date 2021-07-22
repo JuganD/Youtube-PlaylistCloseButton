@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name     Youtube-ListCloseButton
+// @name     Youtube-PlaylistCloseButton
 // @version  1.0.0
 // @author   JuganD
 // @grant    none
