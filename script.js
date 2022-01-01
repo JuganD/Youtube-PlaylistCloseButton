@@ -3,9 +3,9 @@
 // Parameter "insertAfterExpandButton" accepts TRUE or FALSE
 // -> TRUE (or any value that evaluates to TRUE) appends the close button after the expand button,
 // where as FALSE appends it before the expand button
-function CreateCloseButtonAndAppendIt(insertAfterExpandButton) {
+function CreateCloseButtonAndAppendIt(expandButtonSelector, insertAfterExpandButton) {
     // Expand button after which we insert the element
-    let expandButton = document.getElementById("expand-button");
+    let expandButton = document.querySelector(expandButtonSelector);
 
     if (expandButton == null)
         return null;

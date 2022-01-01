@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name     Youtube-PlaylistCloseButton
-// @version  1.0.0
+// @version  1.0.1
 // @author   JuganD
 // @grant    none
 // @match    https://www.youtube.com/*
 // @run-at   document-end
-// @require  https://cdn.jsdelivr.net/gh/JuganD/Youtube-PlaylistCloseButton@1.0.0/script.js
+// @require  https://cdn.jsdelivr.net/gh/JuganD/Youtube-PlaylistCloseButton@1.0.1/script.js
 // ==/UserScript==
 
 function CreateButtonOnVideoPage() {
@@ -16,7 +16,8 @@ function CreateButtonOnVideoPage() {
             // Create the button and append it AFTER the expand button
             // This is configurable! If you want, you can change the "true" value to "false", 
             // which will put the close button BEFORE the expand button
-            let closeButton = CreateCloseButtonAndAppendIt(true);
+            // The first parameter is the query selector for the expand button.
+            let closeButton = CreateCloseButtonAndAppendIt("#secondary-inner #expand-button", true);
             if (closeButton != null) {
                 // If everything worked as intended, we should have the new element in the DOM and attach onclick event
                 closeButton.addEventListener("click", CloseButtonOnClickEvent);
