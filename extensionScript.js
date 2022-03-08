@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name     Youtube-PlaylistCloseButton
-// @version  1.0.1
+// @version  1.0.2
 // @author   JuganD
 // @grant    none
 // @match    https://www.youtube.com/*
 // @run-at   document-end
-// @require  https://cdn.jsdelivr.net/gh/JuganD/Youtube-PlaylistCloseButton@1.0.1/script.js
+// @require  https://cdn.jsdelivr.net/gh/JuganD/Youtube-PlaylistCloseButton@1.0.2/script.js
 // ==/UserScript==
 
 function CreateButtonOnVideoPage() {
