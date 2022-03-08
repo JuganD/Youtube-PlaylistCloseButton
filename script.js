@@ -85,6 +85,9 @@ function CloseButtonOnClickEvent() {
     // Remove the list query parameter but leave the rest
     videoUrl = removeURLParameter(videoUrl, "list");
 
+    // Pause the video to trigger "ytp-time-current" refresh
+    document.getElementById("movie_player").click();
+    
     // Find the video time elapsed minutes:seconds
     // This way we can calculate the time parameter that Youtube puts, without actually using their functions
     // This is done so that when the page refreshes, the video will continue from the curret time elapsed and not from the beginning.
